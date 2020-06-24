@@ -23,7 +23,8 @@ public class TaskController {
 		@RequestMapping(value="/getTasks",method = RequestMethod.GET)
 		public ResponseEntity<ResponseEntityBody> getTasks(){
 			logger.info("master");
-			logger.info("get all Tasks Today complete only");
+			logger.info("get all completed tasks");
 			return taskService.getTasks();
 		}
 }
+
