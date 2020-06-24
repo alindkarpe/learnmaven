@@ -22,7 +22,7 @@ public class TaskController {
 		
 		@RequestMapping(value="/getTasks",method = RequestMethod.GET)
 		public ResponseEntity<ResponseEntityBody> getTasks(){
-			logger.info("get all Tasks: ");
+			logger.info("get all Tasks Today complete");
 			return taskService.getTasks();
 		}
 }
